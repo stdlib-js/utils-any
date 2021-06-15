@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-any",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test whether at least one element in a collection is truthy.",
   "license": "Apache-2.0",
   "author": {
