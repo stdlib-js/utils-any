@@ -20,7 +20,7 @@ limitations under the License.
 
 # any
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Test whether at least one element in a collection is truthy.
 
@@ -132,11 +132,11 @@ bool = any( arr );
 
 ## See Also
 
--   [`@stdlib/utils/any-by`][@stdlib/utils/any-by]: test whether at least one element in a collection passes a test implemented by a predicate function.
--   [`@stdlib/utils/every`][@stdlib/utils/every]: test whether all elements in a collection are truthy.
--   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: invoke a function for each element in a collection.
--   [`@stdlib/utils/none`][@stdlib/utils/none]: test whether all elements in a collection are falsy.
--   [`@stdlib/utils/some`][@stdlib/utils/some]: test whether a collection contains at least `n` elements which are truthy.
+-   <span class="package-name">[`@stdlib/utils/any-by`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/every`][@stdlib/utils/every]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection are truthy.</span>
+-   <span class="package-name">[`@stdlib/utils/for-each`][@stdlib/utils/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/none`][@stdlib/utils/none]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection are falsy.</span>
+-   <span class="package-name">[`@stdlib/utils/some`][@stdlib/utils/some]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which are truthy.</span>
 
 </section>
 
@@ -187,8 +187,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-any/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-any?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-any.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-any/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
