@@ -34,32 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-any
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-any = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-any@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.any;
-})();
-</script>
+var any = require( '@stdlib/utils-any' );
 ```
 
 #### any( collection )
@@ -105,14 +103,9 @@ var bool = any( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-any@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var any = require( '@stdlib/utils-any' );
 
 var bool;
 var arr;
@@ -125,11 +118,6 @@ for ( i = 0; i < 100; i++ ) {
 
 bool = any( arr );
 // returns <boolean>
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -227,6 +215,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-any/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-any/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-any/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-any/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-any/main/LICENSE
 
@@ -238,15 +227,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by/tree/umd
+[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils-any-by
 
-[@stdlib/utils/every]: https://github.com/stdlib-js/utils-every/tree/umd
+[@stdlib/utils/every]: https://github.com/stdlib-js/utils-every
 
-[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each/tree/umd
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each
 
-[@stdlib/utils/none]: https://github.com/stdlib-js/utils-none/tree/umd
+[@stdlib/utils/none]: https://github.com/stdlib-js/utils-none
 
-[@stdlib/utils/some]: https://github.com/stdlib-js/utils-some/tree/umd
+[@stdlib/utils/some]: https://github.com/stdlib-js/utils-some
 
 <!-- </related-links> -->
 
