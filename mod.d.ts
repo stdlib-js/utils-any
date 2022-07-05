@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,27 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/object';
 
 /**
-* Test whether at least one element in a collection is truthy.
+* Tests whether at least one element in a collection is truthy.
 *
-* @module @stdlib/utils-any
+* ## Notes
+*
+* -   The function immediately returns upon encountering a truthy value.
+* -   If provided an empty collection, the function returns `false`.
+*
+* @param collection - input collection
+* @returns boolean indicating whether at least one element is truthy
 *
 * @example
-* var any = require( '@stdlib/utils-any' );
-*
 * var arr = [ 0, 0, 0, 0, 1 ];
 *
 * var bool = any( arr );
 * // returns true
 */
-
-// MODULES //
-
-var any = require( './main.js' );
+declare function any( collection: Collection ): boolean;
 
 
 // EXPORTS //
 
-module.exports = any;
+export = any;
