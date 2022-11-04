@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,22 +16,22 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var isCollection = require( '@stdlib/assert-is-collection' );
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+import { Collection } from '@stdlib/types/object';
 
 /**
 * Tests whether at least one element in a collection is truthy.
 *
-* @param {Collection} collection - input collection
-* @throws {TypeError} must provide a collection
-* @returns {boolean} boolean indicating whether at least one element is truthy
+* ## Notes
+*
+* -   The function immediately returns upon encountering a truthy value.
+* -   If provided an empty collection, the function returns `false`.
+*
+* @param collection - input collection
+* @returns boolean indicating whether at least one element is truthy
 *
 * @example
 * var arr = [ 0, 0, 0, 0, 1 ];
@@ -39,22 +39,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var bool = any( arr );
 * // returns true
 */
-function any( collection ) {
-	var len;
-	var i;
-	if ( !isCollection( collection ) ) {
-		throw new TypeError( format( '0iDBN', collection ) );
-	}
-	len = collection.length;
-	for ( i = 0; i < len; i++ ) {
-		if ( collection[ i ] ) {
-			return true;
-		}
-	}
-	return false;
-}
+declare function any( collection: Collection ): boolean;
 
 
 // EXPORTS //
 
-module.exports = any;
+export = any;
