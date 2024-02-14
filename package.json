@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-any",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test whether at least one element in a collection is truthy.",
   "license": "Apache-2.0",
   "author": {
@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-collection": "^0.1.0",
-    "@stdlib/string-format": "^0.1.1",
-    "@stdlib/types": "^0.2.0"
+    "@stdlib/assert-is-collection": "^0.2.0",
+    "@stdlib/string-format": "^0.2.0",
+    "@stdlib/types": "^0.3.1"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.1.1",
